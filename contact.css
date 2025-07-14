@@ -3,7 +3,8 @@
 
 /* Variables CSS pour les couleurs Mama Bio */
 :root {
-    --mama-bio-green: #8BC34A; /* Vert Doux */
+    --mama-bio-green: #8BC34A;
+    /* Vert Doux */
     --light-green-color: #9CCC5A;
     --orange-color: #FF9800;
     --light-orange-color: #FFB74D;
@@ -98,6 +99,10 @@ body {
 }
 
 /* Contact Form */
+.contact-form-section {
+    /* Conteneur pour la section formulaire */
+}
+
 .form-card {
     background: var(--beige-color);
     padding: 3rem 2.5rem;
@@ -160,6 +165,10 @@ body {
 }
 
 /* Contact Info */
+.contact-info-section {
+    /* Conteneur pour la section info */
+}
+
 .info-card {
     background: white;
     padding: 3rem 2.5rem;
@@ -260,49 +269,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Business Hours */
-.business-hours {
-    background: linear-gradient(135deg, var(--green-color), var(--light-green-color));
-    padding: 3rem 2.5rem;
-    border-radius: 1rem;
-    text-align: center;
-    color: white;
-    box-shadow: 0 10px 30px rgba(139, 195, 74, 0.3);
-}
-
-.business-hours h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-
-.hours-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.hours-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 0.5rem;
-    backdrop-filter: blur(10px);
-}
-
-.hours-item .day {
-    font-weight: 500;
-}
-
-.hours-item .time {
-    font-weight: 600;
-}
-
-
 /* Responsive Design */
 @media (max-width: 1024px) {
     .contact-grid {
@@ -316,8 +282,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
-
     .hero-content h1 {
         font-size: 2.2rem;
     }
@@ -343,14 +307,6 @@ body {
 
     .container {
         padding: 0 15px;
-    }
-
-    .business-hours {
-        padding: 2.5rem 2rem;
-    }
-
-    .hours-grid {
-        grid-template-columns: 1fr;
     }
 
     .social-links {
